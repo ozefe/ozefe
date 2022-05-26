@@ -1,0 +1,36 @@
+name: Crypto Price Tracker
+
+on:
+  schedule:
+  - cron: '*/30 * * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v3
+      
+      - name: Update cryptocurrency prices
+        env:
+          CMC_API_KEY: ${{ secrets.CMC_API_KEY }}
+          CURRENCIES: 'BTC,ETH,XMR'
+        run: python cpt.py
+      
+      - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.ref }}
+        run: |
+          gh api --method PUT /repos/:owner/:repo/contents/README.md \
+          --field message="Cryptocurrency price update ($(date -u '+%T %d/%m/%y'))" \
+          --field content="$(base64 -i README.md)" \
+          --field encoding="base64" \
+          --field branch="$BRANCH_NAME" \
+          --field sha="$(git rev-parse $BRANCH_NAME:README.md)"
+
