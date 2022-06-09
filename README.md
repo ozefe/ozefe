@@ -1,8 +1,8 @@
 <div align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="/ozefe/ozefe/raw/main/assets/logo_dark.gif">
-        <source media="(prefers-color-scheme: light)" srcset="/ozefe/ozefe/raw/main/assets/logo_light.gif">
-        <img alt="Theme-adjusted logo" src="/ozefe/ozefe/raw/main/assets/logo_dark.gif">
+        <source media="(prefers-color-scheme: dark)" srcset="/assets/logo_dark.gif">
+        <source media="(prefers-color-scheme: light)" srcset="/assets/logo_light.gif">
+        <img alt="Theme-adjusted logo" src="/assets/logo_dark.gif">
     </picture>
 </div>
 <br>
