@@ -38,9 +38,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td id="#BTC">26,428.43<abbr title="US Dollar">$</abbr></td>
-                    <td id="#ETH">1,843.92<abbr title="US Dollar">$</abbr></td>
-                    <td id="#XMR">143.58<abbr title="US Dollar">$</abbr></td>
+                    <td id="#BTC">26,437.33<abbr title="US Dollar">$</abbr></td>
+                    <td id="#ETH">1,844.08<abbr title="US Dollar">$</abbr></td>
+                    <td id="#XMR">144.30<abbr title="US Dollar">$</abbr></td>
                 </tr>
             </tbody>
         </table>
