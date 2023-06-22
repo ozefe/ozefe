@@ -14,12 +14,12 @@
             <tr>
                 <td>
                     <samp>
-                        <a href="https://efe.pw" title="My personal website">efe.pw</a>
+                        <a href="https://efe.cv" title="My personal website">efe.pw</a>
                     </samp>
                 </td>
                 <td>
                     <samp>
-                        <a href="mailto:hi@efe.pw" title="My personal email address">hi@efe.pw</a>
+                        <a href="mailto:hi@efe.cv" title="My personal email address">hi@efe.pw</a>
                     </samp>
                 </td>
             </tr>
