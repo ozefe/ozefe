@@ -1,0 +1,87 @@
+name: GitHub README Summarizer
+run-name: "Summarization #${{ github.run_number }}"
+on:
+  schedule:
+    # Runs at 00:05 UTC every day
+    - cron: 5 0 * * *
+  # Allows the workflow to be triggered manually from the GitHub Actions UI.
+  workflow_dispatch:
+jobs:
+  summarize_readme:
+    name: Summarize README
+    # This is necessary for the job to commit and push changes back to the repository.
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v5
+        with:
+          # Checks out the repository's source code. `fetch-depth: 2` retrieves the last
+          # two commits. This is a strategic choice to inspect the author of the most
+          # recent commit. If the last commit was made by this bot, we can reset to the
+          # commit before it, effectively amending the previous bot commit instead of
+          # creating a new one. This prevents cluttering the git history.
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install --requirement requirements.txt
+
+      - name: Run GitHub README Summarizer
+        env:
+          GH_SUMMARIZER_GEMINI_API_KEY: ${{ secrets.GH_SUMMARIZER_GEMINI_API_KEY }}
+          GH_SUMMARIZER_SCP_SYSTEM_PROMPT: ${{ vars.GH_SUMMARIZER_SCP_SYSTEM_PROMPT }}
+          GH_SUMMARIZER_SCP_USER_PROMPT: ${{ vars.GH_SUMMARIZER_SCP_USER_PROMPT }}
+          GH_SUMMARIZER_WIKIPEDIA_SYSTEM_PROMPT: ${{ vars.GH_SUMMARIZER_WIKIPEDIA_SYSTEM_PROMPT }}
+          GH_SUMMARIZER_WIKIPEDIA_USER_PROMPT: ${{ vars.GH_SUMMARIZER_WIKIPEDIA_USER_PROMPT }}
+        run: |
+          cd src/
+          python gh_summarizer.py \
+            --max-retries 5 \
+            --model gemini-2.5-flash \
+            --output-readme ../README.md
+        # A 5-minute timeout is set to prevent the job from running indefinitely.
+        timeout-minutes: 5
+
+      - name: Configure git & stage README.md
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+
+      - name: Get last commit author
+        run: echo "LAST_COMMIT_AUTHOR=$(git log -1 --pretty=%an)" >> $GITHUB_ENV
+
+      # IMPORTANT: This step rewrites the git history. `git reset --soft HEAD~1` moves
+      # the HEAD pointer back by one commit while keeping the changes in the staging
+      # area. This is performed only if the last commit was authored by the bot. The
+      # purpose is to 'squash' or 'amend' the previous bot commit with the new README
+      # changes, rather than creating a new, separate commit. This maintains a clean,
+      # linear history, avoiding a long sequence of automated commits.
+      #
+      # While `git reset` on a shared remote branch is generally discouraged, it is
+      # acceptable here as this branch is managed exclusively by this automated process.
+      - name: Reset last commit if its author is bot
+        if: ${{ env.LAST_COMMIT_AUTHOR == 'github-actions[bot]' }}
+        run: git reset --soft HEAD~1
+
+      - name: Commit changes with nonce
+        run: |
+          cat > commit_message.txt <<- EOM
+          chore(README): Update summaries
+
+          Nonce: $(curl --silent http://numbersapi.com/random)
+          EOM
+          git commit -F commit_message.txt
+
+      - name: Push changes to remote
+        # A force push is required because the commit history has been altered by the
+        # `git reset` command. This overwrites the remote branch's history with the local
+        # one.
+        run: git push --force origin main
