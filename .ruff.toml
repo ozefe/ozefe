@@ -1,0 +1,46 @@
+# In addition to the standard set of inclusions, include `.pyw` files.
+extend-include = ["*.pyw"]
+
+# Allow autofix
+fix = true
+
+# Enumerate all fixed violations.
+show-fixes = true
+
+# Warn if using features from newer Python versions that are not available in `target-version`.
+target-version = "py313"
+
+[format]
+# Enable reformatting of code snippets in docstrings.
+docstring-code-format = true
+
+[lint]
+# Strict ruleset
+select = ["ALL"]
+
+# Skip annoying rules
+ignore = [
+    "FBT",  # flake8-boolean-trap
+    "T20",  # flake8-print
+    "D203", # incorrect-blank-line-before-class
+    "D213", # multi-line-summary-second-line
+    "D107", # undocumented-public-init
+]
+
+task-tags = ["TODO", "FIXME", "XXX", "HACK"]
+
+[lint.flake8-annotations]
+# Suppress ANN401 for dynamically typed *args and **kwargs arguments.
+allow-star-arg-any = true
+
+[lint.flake8-builtins]
+# Compare module names instead of full module paths. Used by A005 - stdlib-module-shadowing.
+strict-checking = true
+
+[lint.pycodestyle]
+# The maximum line length to allow for doc-line-too-long violations within documentation (W505), including standalone comments.
+max-doc-length = 88
+
+[lint.pydocstyle]
+# Use Google-style docstrings.
+convention = "google"
