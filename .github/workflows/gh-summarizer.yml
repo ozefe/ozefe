@@ -44,7 +44,7 @@ jobs:
           cd src/
           python gh_summarizer.py \
             --max-retries 5 \
-            --model gemini-2.5-pro \
+            --model gemini-2.5-flash \
             --output-readme ../README.md
         # A 5-minute timeout is set to prevent the job from running indefinitely.
         timeout-minutes: 5
