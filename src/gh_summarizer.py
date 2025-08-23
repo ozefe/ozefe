@@ -1404,7 +1404,7 @@ def _main(argv: list[str] | None = None) -> None:  # noqa: C901, PLR0912, PLR091
 
 if __name__ == "__main__":
     # Replace the default logger with our custom one for direct script execution
-    logger = _setup_logging(debug=True)
+    logger = _setup_logging()
 
     # Run the main application logic
     _main()
