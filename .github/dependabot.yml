@@ -4,8 +4,8 @@ updates:
     assignees:
       - ozefe
     commit-message:
-      - prefix: chore
-      - include: scope
+      prefix: chore
+      include: scope
     directory: /
     schedule:
       interval: quarterly
