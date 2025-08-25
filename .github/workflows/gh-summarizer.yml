@@ -2,8 +2,8 @@ name: GitHub README Summarizer
 run-name: "Summarization #${{ github.run_number }}"
 on:
   schedule:
-    # Runs at 00:05 UTC every day
-    - cron: 5 0 * * *
+    # Runs at minute 5 past every 4th hour.
+    - cron: 5 */4 * * *
   # Allows the workflow to be triggered manually from the GitHub Actions UI.
   workflow_dispatch:
 jobs:
