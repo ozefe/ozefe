@@ -12,14 +12,14 @@
     <summary></summary>
     <dl align="justify">
         <dt>
-            <a href="http://scp-wiki.wikidot.com/scp-915" title="The Mechanotesseractic Computer">SCP-915</a>
+            <a href="http://scp-wiki.wikidot.com/scp-4975" title="Time's Up">SCP-4975</a>
             <sup><span title="This uses GitHub Actions to periodically pull new data from the SCP Foundation Wiki and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>SCP-915 is a metal cube that functions like a computer but is filled with a constantly shifting maze of gears and clockwork on the inside. This internal space does not follow the normal laws of physics, making it extremely confusing and dangerous to navigate. Anything or anyone that enters can get lost, as the pathways constantly change, and radio signals don't work properly. People who spend time inside can experience distorted time or have their bodies altered, so it is kept sealed and entry is strictly controlled with safety lines.</dd>
+        <dd>SCP-4975 is a tall, thin, bird-like creature with a beak and hardened skin that constantly rotates its neck vertebrae, making a rhythmic cracking sound. It stalks its victims for months before attacking them with its limbs, then eats their body, which sustains it for about three months. While one instance is contained, new sightings and incidents continue to occur in its suspected German origin region, suggesting there might be more than one or it can somehow appear elsewhere.</dd>
         <dt>
-            <a href="https://en.wikipedia.org/wiki/Markovian_Parallax_Denigrate">Markovian Parallax Denigrate</a>
+            <a href="https://en.wikipedia.org/wiki/Scaphism">Scaphism</a>
             <sup><span title="This uses GitHub Actions to periodically pull random Wikipedia articles from interesting and numinous categories — like unsolved internet mysteries — and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>In 1996, an internet mystery known as "Markovian Parallax Denigrate" began when hundreds of nonsensical messages were posted to an online forum called Usenet. Each post was a jumble of random words, and their origin and purpose remain unknown, making it one of the internet's oldest and most peculiar unsolved puzzles. Over the years, people have suggested various explanations for the strange posts, speculating that they could have been the work of an early chatbot, a prankster, a programmer testing code, or simply a strange form of spam with no deeper meaning.</dd>
+        <dd>Scaphism, also known as "the boats," was an ancient Persian method of execution described by Plutarch, though its historical veracity is debated due to the questionable credibility of his source. This torture involved trapping a victim between two boats, with their head, hands, and feet protruding. They were then force-fed milk and honey, which was also smeared on their exposed body parts, attracting insects and causing festering. The victim's own excrement, unable to be removed, bred worms and vermin, leading to a slow, agonizing death by consumption and infection over several days.</dd>
     </dl>
 </details>
