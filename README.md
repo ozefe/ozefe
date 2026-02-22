@@ -12,14 +12,14 @@
     <summary></summary>
     <dl align="justify">
         <dt>
-            <a href="http://scp-wiki.wikidot.com/scp-915" title="The Mechanotesseractic Computer">SCP-915</a>
+            <a href="http://scp-wiki.wikidot.com/scp-8500" title="WTH_LUV_FRM_ADA.zip">SCP-8500</a>
             <sup><span title="This uses GitHub Actions to periodically pull new data from the SCP Foundation Wiki and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>SCP-915 is a metal cube that functions like a computer but is filled with a constantly shifting maze of gears and clockwork on the inside. This internal space does not follow the normal laws of physics, making it extremely confusing and dangerous to navigate. Anything or anyone that enters can get lost, as the pathways constantly change, and radio signals don't work properly. People who spend time inside can experience distorted time or have their bodies altered, so it is kept sealed and entry is strictly controlled with safety lines.</dd>
+        <dd>SCP-8500 is a virtual anomaly that appears as an interactive experience, where the user is assigned to oversee containment procedures for it. It involves two entities, implied to be previous supervisors, who both demand the user's attention within the virtual environment. The article itself is highly interactive and relies on a browser's HTML5 canvas support, suggesting it's designed to be a direct experience for the reader, blurring the lines between the document and the anomaly.</dd>
         <dt>
-            <a href="https://en.wikipedia.org/wiki/Markovian_Parallax_Denigrate">Markovian Parallax Denigrate</a>
+            <a href="https://en.wikipedia.org/wiki/Ebenezer_Place,_Wick">Ebenezer Place, Wick</a>
             <sup><span title="This uses GitHub Actions to periodically pull random Wikipedia articles from interesting and numinous categories — like unsolved internet mysteries — and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>In 1996, an internet mystery known as "Markovian Parallax Denigrate" began when hundreds of nonsensical messages were posted to an online forum called Usenet. Each post was a jumble of random words, and their origin and purpose remain unknown, making it one of the internet's oldest and most peculiar unsolved puzzles. Over the years, people have suggested various explanations for the strange posts, speculating that they could have been the work of an early chatbot, a prankster, a programmer testing code, or simply a strange form of spam with no deeper meaning.</dd>
+        <dd>Ebenezer Place in Wick, Caithness, Scotland, holds the Guinness World Record for being the shortest street globally, measuring only 2.06 meters (6 ft 9 in) long. It features a single address, the entrance to No. 1 Bistro, part of Mackays Hotel, which also fronts Union Street and River Street. The street was officially recognized in 1887, originating from a building constructed in 1883 whose owner was instructed to display a name on its shortest side. It gained its world record status in 2006, surpassing the previous record held by Elgin Street in Bacup, England.</dd>
     </dl>
 </details>
