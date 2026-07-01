@@ -12,14 +12,14 @@
     <summary></summary>
     <dl align="justify">
         <dt>
-            <a href="http://scp-wiki.wikidot.com/scp-915" title="The Mechanotesseractic Computer">SCP-915</a>
+            <a href="http://scp-wiki.wikidot.com/scp-362" title="A Cool T-Shirt">SCP-362</a>
             <sup><span title="This uses GitHub Actions to periodically pull new data from the SCP Foundation Wiki and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>SCP-915 is a metal cube that functions like a computer but is filled with a constantly shifting maze of gears and clockwork on the inside. This internal space does not follow the normal laws of physics, making it extremely confusing and dangerous to navigate. Anything or anyone that enters can get lost, as the pathways constantly change, and radio signals don't work properly. People who spend time inside can experience distorted time or have their bodies altered, so it is kept sealed and entry is strictly controlled with safety lines.</dd>
+        <dd>SCP-362 is a faded blue T-shirt from a children's cartoon show. When someone wears it, they feel normal, but as soon as they take it off, they see many blurry, shadowy figures in the room that only they can perceive. These figures move to avoid contact and seem to interact with objects, though they don't actually touch anything visible to others. If the shirt is worn for a very long time, these figures can cause power outages and even make people disappear, while also leaving behind strange, coded messages on computers. It is kept in a sealed bag in a locked box, and only low-clearance personnel are allowed to wear it for short periods to prevent dangerous incidents.</dd>
         <dt>
-            <a href="https://en.wikipedia.org/wiki/Markovian_Parallax_Denigrate">Markovian Parallax Denigrate</a>
+            <a href="https://en.wikipedia.org/wiki/Heisenbug">Heisenbug</a>
             <sup><span title="This uses GitHub Actions to periodically pull random Wikipedia articles from interesting and numinous categories — like unsolved internet mysteries — and summarize it with Google's Gemini family of models. Since this process is automated, please use the email in my GitHub profile to inform me of any errors or inappropriate content."><mark>(?)</mark></span></sup>
         </dt>
-        <dd>In 1996, an internet mystery known as "Markovian Parallax Denigrate" began when hundreds of nonsensical messages were posted to an online forum called Usenet. Each post was a jumble of random words, and their origin and purpose remain unknown, making it one of the internet's oldest and most peculiar unsolved puzzles. Over the years, people have suggested various explanations for the strange posts, speculating that they could have been the work of an early chatbot, a prankster, a programmer testing code, or simply a strange form of spam with no deeper meaning.</dd>
+        <dd>A heisenbug is a type of software bug that changes its behavior or disappears entirely when a programmer tries to examine or debug it, much like how observing a quantum system can alter its state. This often happens because the tools used for debugging, such as inserting print statements or running a program in a debugger, subtly change the program's timing or memory usage, which can make the bug temporarily vanish. Common causes include issues with optimized code, uninitialized variables, invalid pointers, or race conditions in multi-threaded applications, making them notoriously difficult to find and fix.</dd>
     </dl>
 </details>
